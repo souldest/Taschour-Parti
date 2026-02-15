@@ -1,126 +1,179 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teschour | Parti Mauritanien - Site Officiel</title>
-    
-    <meta name="description" content="Site officiel du Parti Teschour Mauritanie. Consultation, unité et développement durable.">
-    <meta property="og:title" content="Teschour | Parti Mauritanien">
-    <meta property="og:type" content="website">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <title>حزب تشاور الموريتاني | Parti Teschour Mauritanie</title>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;600;800&display=swap');
-        
-        :root { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; }
-        .arabic { direction: rtl; font-family: 'Amiri', serif; }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+        body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
+        section { padding:60px 20px; }
+        .container { max-width:1100px; margin:auto; }
+        h1, h2, h3, h4 { margin-bottom:20px; }
+        .fr { direction:ltr; text-align:left; margin-top:15px; color:#444; }
+        .btn-primary {
+            display:inline-block;
+            padding:12px 25px;
+            background:#1e3a8a;
+            color:white;
+            text-decoration:none;
+            border-radius:6px;
+            margin:10px 5px 0 0;
         }
-
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+        .btn-secondary {
+            display:inline-block;
+            padding:12px 25px;
+            background:#facc15;
+            color:black;
+            text-decoration:none;
+            border-radius:6px;
+            margin:10px 5px 0 0;
         }
-        .animate-ticker {
-            display: flex;
-            width: 200%;
-            animation: scroll 35s linear infinite;
+        form input, form select {
+            width:100%;
+            padding:10px;
+            margin:5px 0 15px;
         }
-
-        .floating-wa {
-            position: fixed; bottom: 30px; right: 30px; z-index: 100;
-            background-color: #25d366; color: white; width: 65px; height: 65px;
-            border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-size: 35px; box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease;
+        footer {
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:40px 20px;
         }
-        .floating-wa:hover { transform: scale(1.1); }
+        footer a { color:#facc15; text-decoration:none; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
 
-    <a href="https://wa.me/4917631591931" class="floating-wa" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<body>
 
-    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
-        <div class="container mx-auto px-4 h-20 flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <img src="logo-teschour.jpg" alt="Teschour Logo" class="h-14 w-auto object-contain">
-                <div class="leading-tight hidden sm:block border-l pl-4 border-slate-200">
-                    <p class="font-black text-xl tracking-tighter text-blue-900 uppercase">TESCHOUR</p>
-                    <p class="text-[9px] uppercase font-bold text-slate-500 tracking-widest leading-none">Parti Mauritanien</p>
-                </div>
-            </div>
-            
-            <div class="hidden lg:flex space-x-8 font-bold text-sm uppercase text-slate-600">
-                <a href="#programme" class="hover:text-blue-700 transition">Vision</a>
-                <a href="#don" class="hover:text-blue-700 transition">Soutenir</a>
-                <a href="#rejoindre" class="hover:text-blue-700 transition">Adhésion</a>
-            </div>
+<!-- ================= Hero Section ================= -->
+<section id="hero">
+    <div class="container">
+        <h1>كن شريكاً في صناعة القرار.. انضم الآن إلى حزب "تشاور"</h1>
+        <h2>نداء الواجب الوطني</h2>
 
-            <div class="flex items-center gap-4">
-                <a href="#rejoindre" class="bg-yellow-500 hover:bg-yellow-600 text-white px-5 py-2 rounded-full font-bold shadow-md transition text-xs">
-                    REJOINDRE
-                </a>
-                <div class="arabic text-xl font-bold text-blue-800 hidden lg:block">تشاور</div>
-            </div>
-        </div>
-    </nav>
+        <p>
+            إن موريتانيا التي نحلم بها ليست مجرد شعارات، بل هي واقع نبنيه بجهدنا المشترك.
+            في حزب "تشاور"، نؤمن أن التغيير الحقيقي يبدأ من صوت المواطن.
+        </p>
 
-    <header class="hero-gradient text-white py-24 relative overflow-hidden">
-        <div class="container mx-auto px-4 text-center">
-            <img src="logo-teschour.jpg" alt="Teschour Logo" class="h-32 mx-auto mb-8 rounded-full border-4 border-white/20 bg-white">
-
-            <h1 class="text-4xl md:text-7xl font-black mb-6 uppercase">
-                Parti Teschour Mauritanie
-            </h1>
-
-            <div class="arabic text-4xl md:text-6xl font-bold mb-10 text-blue-200">
-                حزب تشاور الموريتاني
-            </div>
-
-            <p class="text-lg md:text-2xl text-blue-100 max-w-4xl mx-auto mb-12 font-light">
-                Consultation, transparence et participation citoyenne pour construire une Mauritanie moderne et unie.
+        <div class="fr">
+            <h2>Devenez acteur du changement – Rejoignez le Parti Teschour</h2>
+            <p>
+                La Mauritanie que nous rêvons de construire n’est pas un slogan,
+                mais une réalité fondée sur la participation citoyenne.
+                Au sein du Parti Teschour, nous croyons que le changement commence par votre voix.
             </p>
-
-            <div class="flex flex-col sm:flex-row justify-center gap-5">
-                <a href="#rejoindre" class="bg-white text-blue-900 px-10 py-5 rounded-2xl font-black text-lg shadow-2xl hover:bg-slate-100 transition">
-                    DEVENIR MEMBRE
-                </a>
-                <a href="#programme" class="bg-blue-700 border-2 border-blue-400 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-800 transition">
-                    NOTRE VISION
-                </a>
-            </div>
         </div>
-    </header>
 
-    <div class="bg-yellow-500 py-3 overflow-hidden">
-        <div class="animate-ticker text-white font-black text-lg uppercase italic whitespace-nowrap">
-            <span class="px-10">TESCHOUR : Consultation et Unité ● تشاور : التشاور والوحدة ● TESCHOUR : Participation Citoyenne ● تشاور : صوت الشعب ●</span>
-            <span class="px-10">TESCHOUR : Consultation et Unité ● تشاور : التشاور والوحدة ● TESCHOUR : Participation Citoyenne ● تشاور : صوت الشعب ●</span>
+        <a href="#register" class="btn-primary">سجل الآن</a>
+        <a href="#about" class="btn-secondary">اعرف المزيد</a>
+    </div>
+</section>
+
+
+<!-- ================= Registration ================= -->
+<section id="register">
+    <div class="container">
+        <h2>استمارة الانضمام</h2>
+        <p>يرجى تعبئة البيانات التالية بدقة.</p>
+
+        <div class="fr">
+            <h2>Formulaire d’Adhésion</h2>
+            <p>Veuillez remplir soigneusement les informations suivantes.</p>
+        </div>
+
+        <form>
+            <label>الاسم الكامل</label>
+            <input type="text" required>
+
+            <label>الرقم الوطني / الهاتف</label>
+            <input type="text" required>
+
+            <label>الولاية / المقاطعة</label>
+            <input type="text" required>
+
+            <label>مجال الاهتمام الرئيسي</label>
+            <select>
+                <option>الاقتصاد</option>
+                <option>التعليم</option>
+                <option>حقوق الإنسان</option>
+                <option>تمكين المرأة</option>
+                <option>قضايا الشباب</option>
+            </select>
+
+            <button type="submit" class="btn-primary">إرسال الطلب</button>
+        </form>
+
+        <div class="fr">
+            <h3>Pourquoi demandons-nous ces informations ?</h3>
+            <p>
+                Ces données nous permettent de vous intégrer dans la structure locale
+                et de vous impliquer activement selon vos compétences.
+            </p>
         </div>
     </div>
+</section>
 
-    <footer class="bg-slate-950 text-white py-16 border-t border-blue-900">
-        <div class="container mx-auto px-4 text-center">
-            <img src="logo-teschour.jpg" alt="Teschour Logo Footer" class="h-20 mx-auto mb-6 rounded-lg">
-            <p class="text-slate-400 mb-4">
-                Parti Teschour Mauritanie – Une plateforme nationale de consultation et de démocratie participative.
-            </p>
-            <p class="text-slate-600 text-sm">
-                &copy; 2026 Parti Teschour Mauritanie - Tous droits réservés.
+
+<!-- ================= Why Join ================= -->
+<section id="about">
+    <div class="container">
+        <h2>لماذا تنضم إلينا؟</h2>
+        <p>
+            نحن رؤية للمستقبل تقوم على التشاور، الشفافية، وتمكين الشباب.
+        </p>
+
+        <div class="fr">
+            <h2>Pourquoi nous rejoindre ?</h2>
+            <p>
+                Teschour est plus qu’un parti politique.
+                C’est une vision moderne fondée sur la consultation,
+                la transparence et la participation active des jeunes générations.
             </p>
         </div>
-    </footer>
+    </div>
+</section>
+
+
+<!-- ================= Volunteer ================= -->
+<section id="volunteer">
+    <div class="container">
+        <h2>تطوع معنا</h2>
+        <p>الوطن يُبنى بالمبادرة لا بالانتظار.</p>
+
+        <div class="fr">
+            <h2>Volontariat</h2>
+            <p>
+                La nation se construit par l’engagement.
+                Rejoignez nos équipes terrain, digitales ou consultatives.
+            </p>
+        </div>
+
+        <a href="#register" class="btn-primary">تقدم بطلب تطوع</a>
+    </div>
+</section>
+
+
+<!-- ================= Footer ================= -->
+<footer>
+    <p>انضم إلى +10,000 موريتاني اختاروا التغيير عبر "تشاور"</p>
+
+    <div class="fr">
+        <p>Rejoignez plus de 10 000 Mauritaniens qui ont choisi le changement avec Teschour.</p>
+    </div>
+
+    <p>
+        <a href="#register">عضوية</a> |
+        <a href="#volunteer">تطوع</a> |
+        <a href="#">ميثاق الحزب</a>
+    </p>
+
+    <p>
+        &copy; 2026 حزب تشاور الموريتاني | Parti Teschour Mauritanie
+    </p>
+</footer>
 
 </body>
 </html>
-
 
