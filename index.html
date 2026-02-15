@@ -1,179 +1,194 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حزب تشاور الموريتاني | Parti Teschour Mauritanie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حزب تشاور الموريتاني | Parti Teschour Mauritanie</title>
 
-    <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
-        section { padding:60px 20px; }
-        .container { max-width:1100px; margin:auto; }
-        h1, h2, h3, h4 { margin-bottom:20px; }
-        .fr { direction:ltr; text-align:left; margin-top:15px; color:#444; }
-        .btn-primary {
-            display:inline-block;
-            padding:12px 25px;
-            background:#1e3a8a;
-            color:white;
-            text-decoration:none;
-            border-radius:6px;
-            margin:10px 5px 0 0;
-        }
-        .btn-secondary {
-            display:inline-block;
-            padding:12px 25px;
-            background:#facc15;
-            color:black;
-            text-decoration:none;
-            border-radius:6px;
-            margin:10px 5px 0 0;
-        }
-        form input, form select {
-            width:100%;
-            padding:10px;
-            margin:5px 0 15px;
-        }
-        footer {
-            background:#111;
-            color:white;
-            text-align:center;
-            padding:40px 20px;
-        }
-        footer a { color:#facc15; text-decoration:none; }
-    </style>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#f8fafc;color:#111;line-height:1.7}
+section{padding:80px 20px}
+.container{max-width:1200px;margin:auto}
+h1,h2,h3{margin-bottom:20px}
+.arabic{font-family:'Amiri',serif}
+.fr{direction:ltr;text-align:left;margin-top:20px;color:#444}
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#1e3a8a;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-top:20px;
+font-weight:bold;
+transition:0.3s}
+.btn:hover{background:#0f172a}
+.hero{
+background:linear-gradient(135deg,#1e3a8a,#0f172a);
+color:white;
+text-align:center}
+.hero p{max-width:800px;margin:20px auto}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:40px}
+.card{background:white;padding:30px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.05)}
+form input,form select{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:6px;
+border:1px solid #ccc}
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:50px 20px}
+footer a{color:#facc15;text-decoration:none}
+.highlight{color:#facc15;font-weight:bold}
+</style>
 </head>
 
 <body>
 
-<!-- ================= Hero Section ================= -->
-<section id="hero">
-    <div class="container">
-        <h1>كن شريكاً في صناعة القرار.. انضم الآن إلى حزب "تشاور"</h1>
-        <h2>نداء الواجب الوطني</h2>
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<h1 class="arabic">معاً نصنع القرار… معاً نبني موريتانيا المستقبل</h1>
+<h2>حزب تشاور – صوت الشعب وقوة المشاركة</h2>
 
-        <p>
-            إن موريتانيا التي نحلم بها ليست مجرد شعارات، بل هي واقع نبنيه بجهدنا المشترك.
-            في حزب "تشاور"، نؤمن أن التغيير الحقيقي يبدأ من صوت المواطن.
-        </p>
+<p class="arabic">
+موريتانيا تستحق قيادة تستمع لشعبها.
+في "تشاور" نؤمن أن الديمقراطية تبدأ من المواطن،
+وأن صوتك هو أساس كل قرار سياسي.
+</p>
 
-        <div class="fr">
-            <h2>Devenez acteur du changement – Rejoignez le Parti Teschour</h2>
-            <p>
-                La Mauritanie que nous rêvons de construire n’est pas un slogan,
-                mais une réalité fondée sur la participation citoyenne.
-                Au sein du Parti Teschour, nous croyons que le changement commence par votre voix.
-            </p>
-        </div>
+<div class="fr">
+<h2>Ensemble, construisons la Mauritanie de demain</h2>
+<p>
+Teschour est un mouvement national fondé sur la consultation,
+la transparence et la participation citoyenne.
+Chaque voix compte. Chaque citoyen est un partenaire.
+</p>
+</div>
 
-        <a href="#register" class="btn-primary">سجل الآن</a>
-        <a href="#about" class="btn-secondary">اعرف المزيد</a>
-    </div>
+<a href="#register" class="btn">انضم الآن | Rejoindre</a>
+</div>
 </section>
 
+<!-- VISION -->
+<section>
+<div class="container">
+<h2 class="arabic">رؤيتنا الاستراتيجية 2026 – 2035</h2>
 
-<!-- ================= Registration ================= -->
+<div class="card-grid">
+
+<div class="card">
+<h3 class="arabic">الاقتصاد الوطني</h3>
+<p>تنويع مصادر الدخل، دعم المشاريع الصغيرة، وخلق فرص عمل للشباب.</p>
+<div class="fr">
+<strong>Économie :</strong> Diversification, entrepreneuriat et emploi des jeunes.
+</div>
+</div>
+
+<div class="card">
+<h3 class="arabic">العدالة الاجتماعية</h3>
+<p>ضمان تكافؤ الفرص ومحاربة الفقر والتهميش.</p>
+<div class="fr">
+<strong>Justice sociale :</strong> Égalité des chances et lutte contre la marginalisation.
+</div>
+</div>
+
+<div class="card">
+<h3 class="arabic">التحديث والشفافية</h3>
+<p>إدارة حديثة وشفافة تخدم المواطن أولاً.</p>
+<div class="fr">
+<strong>Modernisation :</strong> Gouvernance transparente et efficace.
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CAMPAIGN -->
+<section style="background:#eef2ff;">
+<div class="container">
+<h2 class="arabic">لا تكتفِ بالمشاهدة… كن جزءاً من التغيير</h2>
+
+<p class="arabic">
+آلاف الموريتانيين اختاروا المشاركة بدل الصمت.
+اليوم دورك لتكون جزءاً من حركة وطنية
+تحول الأفكار إلى إنجازات.
+</p>
+
+<div class="fr">
+<h2>Ne restez pas spectateur… devenez acteur</h2>
+<p>
+Des milliers de Mauritaniens ont déjà rejoint Teschour.
+Faites partie d’un mouvement qui transforme les idées en actions.
+</p>
+</div>
+
+<a href="#register" class="btn">سجل عضويتك الآن</a>
+</div>
+</section>
+
+<!-- REGISTRATION -->
 <section id="register">
-    <div class="container">
-        <h2>استمارة الانضمام</h2>
-        <p>يرجى تعبئة البيانات التالية بدقة.</p>
+<div class="container">
+<h2 class="arabic">استمارة الانضمام</h2>
+<p class="arabic">سجل الآن وكن شريكاً في صناعة المستقبل.</p>
 
-        <div class="fr">
-            <h2>Formulaire d’Adhésion</h2>
-            <p>Veuillez remplir soigneusement les informations suivantes.</p>
-        </div>
+<div class="fr">
+<h2>Formulaire d’Adhésion</h2>
+<p>Remplissez le formulaire pour devenir membre officiel.</p>
+</div>
 
-        <form>
-            <label>الاسم الكامل</label>
-            <input type="text" required>
+<form action="https://formspree.io/f/your-id" method="POST">
 
-            <label>الرقم الوطني / الهاتف</label>
-            <input type="text" required>
+<input type="text" name="name" placeholder="الاسم الكامل | Nom complet" required>
+<input type="tel" name="phone" placeholder="رقم الهاتف | Téléphone" required>
+<input type="text" name="city" placeholder="الولاية / المدينة | Wilaya / Ville" required>
 
-            <label>الولاية / المقاطعة</label>
-            <input type="text" required>
+<select name="interest">
+<option>الاقتصاد | Économie</option>
+<option>التعليم | Éducation</option>
+<option>حقوق الإنسان | Droits humains</option>
+<option>تمكين المرأة | Autonomisation des femmes</option>
+<option>قضايا الشباب | Jeunesse</option>
+</select>
 
-            <label>مجال الاهتمام الرئيسي</label>
-            <select>
-                <option>الاقتصاد</option>
-                <option>التعليم</option>
-                <option>حقوق الإنسان</option>
-                <option>تمكين المرأة</option>
-                <option>قضايا الشباب</option>
-            </select>
-
-            <button type="submit" class="btn-primary">إرسال الطلب</button>
-        </form>
-
-        <div class="fr">
-            <h3>Pourquoi demandons-nous ces informations ?</h3>
-            <p>
-                Ces données nous permettent de vous intégrer dans la structure locale
-                et de vous impliquer activement selon vos compétences.
-            </p>
-        </div>
-    </div>
+<button type="submit" class="btn">إرسال الطلب | Envoyer</button>
+</form>
+</div>
 </section>
 
+<!-- FINAL CALL -->
+<section class="hero">
+<div class="container">
+<h2 class="arabic">موريتانيا تستحق الأفضل</h2>
+<p class="arabic">التغيير يبدأ بك… انضم اليوم.</p>
 
-<!-- ================= Why Join ================= -->
-<section id="about">
-    <div class="container">
-        <h2>لماذا تنضم إلينا؟</h2>
-        <p>
-            نحن رؤية للمستقبل تقوم على التشاور، الشفافية، وتمكين الشباب.
-        </p>
+<div class="fr">
+<h2>La Mauritanie mérite mieux</h2>
+<p>Le changement commence par vous.</p>
+</div>
 
-        <div class="fr">
-            <h2>Pourquoi nous rejoindre ?</h2>
-            <p>
-                Teschour est plus qu’un parti politique.
-                C’est une vision moderne fondée sur la consultation,
-                la transparence et la participation active des jeunes générations.
-            </p>
-        </div>
-    </div>
+<a href="#register" class="btn">كن شريكاً في المستقبل</a>
+</div>
 </section>
 
-
-<!-- ================= Volunteer ================= -->
-<section id="volunteer">
-    <div class="container">
-        <h2>تطوع معنا</h2>
-        <p>الوطن يُبنى بالمبادرة لا بالانتظار.</p>
-
-        <div class="fr">
-            <h2>Volontariat</h2>
-            <p>
-                La nation se construit par l’engagement.
-                Rejoignez nos équipes terrain, digitales ou consultatives.
-            </p>
-        </div>
-
-        <a href="#register" class="btn-primary">تقدم بطلب تطوع</a>
-    </div>
-</section>
-
-
-<!-- ================= Footer ================= -->
+<!-- FOOTER -->
 <footer>
-    <p>انضم إلى +10,000 موريتاني اختاروا التغيير عبر "تشاور"</p>
+<p class="arabic">انضم إلى أكثر من <span class="highlight">10,000+</span> موريتاني اختاروا التغيير عبر "تشاور"</p>
 
-    <div class="fr">
-        <p>Rejoignez plus de 10 000 Mauritaniens qui ont choisi le changement avec Teschour.</p>
-    </div>
+<div class="fr">
+<p>Rejoignez plus de <span class="highlight">10 000</span> Mauritaniens engagés avec Teschour.</p>
+</div>
 
-    <p>
-        <a href="#register">عضوية</a> |
-        <a href="#volunteer">تطوع</a> |
-        <a href="#">ميثاق الحزب</a>
-    </p>
-
-    <p>
-        &copy; 2026 حزب تشاور الموريتاني | Parti Teschour Mauritanie
-    </p>
+<p>&copy; 2026 حزب تشاور الموريتاني | Parti Teschour Mauritanie</p>
 </footer>
 
 </body>
 </html>
-
